@@ -1,5 +1,9 @@
 
-/caches/**
+.gradle/
+.idea/
+build/
+out/
+*.iml
 
 # Compiled class file
 *.class
