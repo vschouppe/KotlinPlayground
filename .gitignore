@@ -21,3 +21,6 @@ gradle-wrapper.properties
 
 # User-specific settings
 .idea/
+/.gradle/
+/.idea/
+/build/
