@@ -5,6 +5,8 @@ build/
 out/
 *.iml
 
+Car.class
+
 # Compiled class file
 *.class
 
