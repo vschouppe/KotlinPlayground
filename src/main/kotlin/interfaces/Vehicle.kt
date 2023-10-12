@@ -1,4 +1,4 @@
-package com.tekadept.demo
+package com.tekadept.demo.interfaces
 
 interface Vehicle {
     val MakeName: String

@@ -1,4 +1,4 @@
-package com.tekadept.demo
+package examples
 
 data class Student(val name: String, var age: Int)
 

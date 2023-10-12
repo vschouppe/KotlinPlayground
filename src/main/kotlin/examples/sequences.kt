@@ -1,5 +1,7 @@
 package  com.tekadept.demo
 
+import examples.getStudents
+
 fun sequences() {
     val students = getStudents()
     val sqStudents = students.drop(1).take(3).toList()
