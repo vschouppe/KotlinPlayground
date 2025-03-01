@@ -1,63 +1,24 @@
-group 'com.tekadept.demo'
-version '1.0-SNAPSHOT'
-
-buildscript {
-    ext.kotlin_version = '1.1.2-2'
-
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.0'  // Use a more recent version of Kotlin
 }
 
-apply plugin: 'java'
-apply plugin: 'kotlin'
+group = 'com.tekadept.demo'
+version = '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = '1.8'
 
 repositories {
-    mavenCentral()
+    mavenCentral()  // Use only Maven Central, JCenter is deprecated
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
-}
-group 'com.tekadept.demo'
-version '1.0-SNAPSHOT'
-
-buildscript {
-    ext.kotlin_version = '1.1.2-2'
-
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
-apply plugin: 'java'
-apply plugin: 'kotlin'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-    jcenter()
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.0"  // Make sure to update the Kotlin version
+    implementation 'io.arrow-kt:arrow-core:1.2.0'  // Arrow library
+    testImplementation 'junit:junit:4.12'  // JUnit for testing
 }
 
 sourceSets {
     main.kotlin.srcDirs += 'src/main/myKotlin'
     main.java.srcDirs += 'src/main/myJava'
-}
-
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'org.funktionale:funktionale-all:1.0.1'
 }

@@ -1,4 +1,7 @@
-package com.vschouppe.classes
+package com.vschouppe
+
+import com.vschouppe.classes.FosterMooreEmployee
+import com.vschouppe.classes.MyPerson
 
 fun main(args: Array<String>) {
     val bert = FosterMooreEmployee("Bert", "brown",18)
