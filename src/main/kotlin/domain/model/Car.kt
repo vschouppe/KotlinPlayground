@@ -1,4 +1,4 @@
-package com.tekadept.demo.classes
+package com.tekadept.demo.domain.model
 
 import com.tekadept.demo.interfaces.Vehicle
 

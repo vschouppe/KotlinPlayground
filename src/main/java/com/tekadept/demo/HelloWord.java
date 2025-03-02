@@ -1,6 +1,6 @@
 package com.tekadept.demo;
 
-import com.tekadept.demo.classes.Person;
+import com.tekadept.demo.domain.model.Person;
 
 public class HelloWord {
     public static void main(String[] args) {

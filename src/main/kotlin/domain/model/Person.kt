@@ -1,4 +1,4 @@
-package com.tekadept.demo.classes
+package com.tekadept.demo.domain.model
 
 @Deprecated("Use the Animal class instead", ReplaceWith("Animal"))
 class Person internal constructor(var firstName: String, var lastName: String) {
