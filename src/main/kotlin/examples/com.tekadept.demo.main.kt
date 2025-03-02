@@ -1,8 +1,8 @@
 package com.tekadept.demo
 
-import com.tekadept.demo.classes.Car
-import com.tekadept.demo.classes.Person
-import com.tekadept.demo.classes.Position
+import com.tekadept.demo.domain.model.Car
+import com.tekadept.demo.domain.model.Person
+import com.tekadept.demo.domain.model.Position
 //import kotlin.reflect.full.memberProperties
 
 object MySingleton {
