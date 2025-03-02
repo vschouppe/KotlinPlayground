@@ -3,7 +3,7 @@ package com.tekadept.demo
 import com.tekadept.demo.classes.Car
 import com.tekadept.demo.classes.Person
 import com.tekadept.demo.classes.Position
-import kotlin.reflect.full.memberProperties
+//import kotlin.reflect.full.memberProperties
 
 object MySingleton {
     var temperatures = arrayOf(80, 76, 90)
@@ -55,9 +55,9 @@ fun main(args: Array<String>) {
     val kClass = Joe.javaClass.kotlin
     println("Simple name = ${kClass.simpleName}")
 
-    for(name in kClass.memberProperties){
-        println("Property name = ${name.name}")
-    }
+//    for(name in kClass.memberProperties){
+//        println("Property name = ${name.name}")
+//    }
 
     useOverload()
     JavaInterop()
